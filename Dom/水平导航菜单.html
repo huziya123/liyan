@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+         }
+#menu{
+    width: 500px;
+    height: 50px;
+}
+
+    #menu li{
+        width: 120px;
+        height: 30px;
+        background: blue;
+        list-style: none;
+        float: left;
+        margin-right: 2px;
+        text-align: center;
+        line-height: 30px;
+ }
+    #menu li a{
+     text-decoration: none;
+     color: brown;
+     display: block;
+ }
+#menu > li:hover{
+    background: #ccc;
+
+}
+    #submenu{
+    display: none;
+}
+#menu li:hover #submenu{
+    display: block
+}
+
+#menu #submenu li:hover{
+background: orange;
+}
+#menu #submenu li{
+    cursor: pointer;
+}
+    
+    </style>
+</head>
+<body>
+    <ul id="menu">
+
+        <li>
+            <a href="">link 1</a>
+            </li>
+        <li>
+           <a href="">link 2 </a>
+        </li>
+         <li>
+             <a href="">link 3</a>
+             <ul id="submenu">
+                 <li>子菜单1</li>
+                 <li>子菜单2</li>
+                 <li>子菜单3</li>
+             </ul>
+        </li>
+         <li>
+             <a href="">link 4</a>
+         </li>
+        
+ </ul>
+
+
+
+
+
+</body>
+</html>

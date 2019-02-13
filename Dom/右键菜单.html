@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu{
+        border: 1px solid;
+        width: 120px;
+        background: #ffffff;
+        display: none;
+         position: absolute;
+    }
+
+
+    
+
+    #menu li{
+        list-style: none;
+        border-bottom: 1px  dashed #ccc;;
+        width: 120px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        cursor: pointer;
+   
+   }
+
+   #menu li:hover{
+    background: #cccccc;
+   }
+</style>
+</head>
+<body>
+     <ol id="menu">
+        <li>菜单一</li>
+        <li>菜单二</li>
+        <li>菜单三</li>
+        <li>菜单四</li>
+    </ol>
+
+<script>
+         var oMenu = document.getElementById('menu');
+         var aLi = oMenu.getElementsByTagName('li');
+         document.oncontextmenu = function (e) { 
+            e = e || window.event; 
+            oMenu.style.display = 'block'; 
+            oMenu.style.left = e.clientX + 'px'; 
+            oMenu.style.top = e.clientY + 'px';
+            
+            return false; 
+        };
+
+         document.onclick = function () {
+            oMenu.style.display = 'none';
+        };
+        for (var i = 0; i < aLi.length; i++) {
+            aLi[i].onclick = function () {
+            alert(this.innerHTML); 
+            
+            };
+        }
+
+</script>
+
+
+
+
+
+</body>
+</html>
