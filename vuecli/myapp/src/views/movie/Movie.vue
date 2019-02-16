@@ -1,22 +1,19 @@
 <template>
   <div>
     <ul>
-        <li class="list-left clearfix"  v-for="(item,index) in dataList" :key="index">
+      <li class="item-list clearfix" v-for="(item,index) in dataList" :key="index">
         <div class="list-left">
           <img :src="item.cover.url" alt="">
         </div>
         <div class="list-right">
           <h4>{{item.title}}</h4>
-         <span v-for="(item,index) in item.actors" :key="index">{{item}}/</span>
-          
-      </div>
+          <span v-for="(item,index) in item.actors" :key="index">{{item}}/</span>
+         
+        </div>
       </li>
     </ul>
-    <div class="loading" v-show="!isLoading">
-      <div class="loading-content">
-        <img src="" alt="">
-      </div>
-    </div>
+    
+  
   </div>
 </template>
 <script>

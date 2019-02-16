@@ -2,7 +2,7 @@
   <div v-bind:class="activeClass">
     <header>
       <span @click="routerPush(btnList[0])">首页</span>
-      <h1>{{activeTitle}}</h1>
+      <h2>{{activeTitle}}</h2>
     </header>
     
     <nav>
@@ -87,8 +87,9 @@ export default {
     color: #fff;
     position: fixed;
     width: 100%;
-    height: 70px;
+    height: 1rem;
     background-color:rgb(33, 150, 243);
+    text-align: center;
   }
   .movie header,.movie nav{
     background-color: rgb(33, 150, 243);
@@ -121,11 +122,8 @@ export default {
     color: #ddd;
     float: left;
     width: 25%;
-    height:70px;
-    line-height: 70px;
-    list-style: none;
-    text-align: center;
-    
+    height: 1rem;
+    line-height: 1rem
   }
   nav li.active{
     color: #fff;
