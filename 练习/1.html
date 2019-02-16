@@ -7,11 +7,60 @@
     <title>Document</title>
 
 </head>
+<style >
+    *{
+        margin: 0;
+        padding:0;
+
+    }
+  ul{
+    padding:10px;
+  }
+  .item-list{
+    border-bottom: 1px solid #333;
+    padding: 20px 0;
+  }
+  .item-list .list-left{
+    float: left;
+    width: 40%;
+    text-align: center
+  }
+  .item-list .list-left img{
+    width: 80%;
+  }
+  .item-list .list-right{
+    float: left;
+    width: 55%;
+    padding-left:5%
+  }
+  .clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+ </style>
 <body>
-    <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-ink>
+    
+
+  <div>
+    <ul>
+      <li class="item-list clearfix"  >
+        <div class="list-left">
+          <img src="01.jpg" alt="">
+        </div>
+        <div class="list-right">
+          <h4>流浪</h4>
+          <span>演员</span>
         
-</div>  
+        </div>
+      </li>
+    </ul>                        
+</div>
+      
 
 </body>
 </html>
+
+   
+
+  
