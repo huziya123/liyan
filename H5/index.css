@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+}
+
+
+#time {
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  position: absolute;
+  background: url("img/加载页面3.gif") no-repeat center;
+  background-size: auto 100%;
+  display: none;
+}
+
+#dream{
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    position: absolute;
+    background: url("img/首页图完成版2.gif") no-repeat center;
+    background-size: 100% 100%;
+    display: none;
+}
+#dianji {
+  width: 50%;
+  height: 18%;
+  left: 25%;
+  top: 80%;
+  position: absolute;
+  background: url("img/san.bt.gif") no-repeat center;
+  background-size: 100% 100%;
+  display: none;
+
+}
+
+#jingdian {
+  width: 18%;
+  height: 6%;
+  left: 78%;
+  top: 91%;
+  position: absolute;
+  background: url("img/dian.png") no-repeat center;
+  background-size: auto 100%;
+  display: none;
+}
+
+#dianji-shou
+{
+
+    width: 100%;
+    height: 15%;
+    left: 0%;
+    top: 81%;
+    position: absolute;
+    background: url("img/bg1_4_2.png") no-repeat center;
+    background-size: auto 100%;
+    display: none;
+   
+
+
+}
+
+
+
+#pg0 {
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  position: absolute;
+  background: url("img/主图.gif") no-repeat center;
+  display:block;
+}
+#pg07 {
+    width: 90%;
+    height: 18%;
+    left: 6%;
+    top: 80%;
+    position: absolute;
+    background: url() no-repeat center;
+    background-size: auto 85%;
+}
+
+#pg00 {
+  width: 100%;
+  height: 15%;
+  left: 0%;
+  top: 81%;
+  position: absolute;
+  background: url("img/bg1_4_2.png") no-repeat center;
+  background-size: auto 100%;
+  display: none;
+}
+
+#pg01 {
+  width: 28%;
+  height: 7.5%;
+  left: 47%;
+  top: 85%;
+  position: absolute;
+  background: url("img/1914bt.png") no-repeat center;
+  background-size: auto 100%;
+  display: block;
+}
+#pg02 {
+  width: 28%;
+  height: 7.5%;
+  left: 4%;
+  top: 71%;
+  position: absolute;
+  background: url("img/1919.bt.png") no-repeat center;
+  background-size: auto 100%;
+  display: block;
+}
+#pg03 {
+  width: 28%;
+  height: 7.5%;
+  left: 67%;
+  top: 58%;
+  position: absolute;
+  background: url("img/1921.bt.png") no-repeat center;
+  background-size: auto 100%;
+  display:block;
+}
+#pg04 {
+  width: 28%;
+  height: 7.5%;
+  left: 37%;
+  top: 39%;
+  position: absolute;
+  background: url("img/1949.bt.png") no-repeat center;
+  background-size: auto 100%;
+  display:block;
+}
+#pg05 {
+  width: 28%;
+  height: 7.5%;
+  left: 64%;
+  top: 31%;
+  position: absolute;
+  background: url("img/now.bt5.png") no-repeat center;
+  background-size: auto 100%;
+  display: block;
+}
+#pg06 {
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  position: absolute;
+  background: url("img/bg9_1.jpg") no-repeat center;
+  display: none;
+}
+#dongshou{
+ 
+    width: 17%;
+    height: 18%;
+    left: 72%;
+    top: 79%;
+    position: absolute;
+    background: url(img/shou1.png) no-repeat center;
+    background-size: auto 100%;
+    opacity: 1;
+
+
+
+}
+#pg1 {
+  width: 96%;
+  height: 96%;
+  left: 2%;
+  top: 2%;
+  position: absolute;
+  overflow: hidden;
+  background: url(img/1914.jpg) no-repeat center;
+  background-size: 100% 100%;
+  display: none;
+}
+#pg011 {
+  width: 40%;
+  height: 10%;
+  right: 5%;
+  top: 82%;
+  position: absolute;
+  background: url(img/bg_xqz2.png) no-repeat center;
+  background-size: auto 100%;
+}
+#pg2 {
+  width: 96%;
+  height: 96%;
+  left: 2%;
+  top: 2%;
+  position: absolute;
+  overflow: hidden;
+  background: url(img/1919_2.gif) no-repeat center;
+  background-size: 100% 100%;
+  display: none;
+}
+#pg021 {
+  width: 40%;
+  height: 10%;
+  right: 5%;
+  top: 82%;
+  position: absolute;
+  background: url(img/bg_xqz2.png) no-repeat center;
+  background-size: auto 100%;
+}
+#pg3 {
+  width: 96%;
+  height: 96%;
+  left: 2%;
+  top: 2%;
+  position: absolute;
+  overflow: hidden;
+  background: url(img/1921.jpg) no-repeat center;
+  background-size: 100% 100%;
+  display: none;
+}
+#pg031 {
+  width: 40%;
+  height: 10%;
+  right: 5%;
+  top: 82%;
+  position: absolute;
+  background: url(img/bg_xqz2.png) no-repeat center;
+  background-size: auto 100%;
+}
+#pg4 {
+  width: 96%;
+  height: 96%;
+  left: 2%;
+  top: 2%;
+  position: absolute;
+  overflow: hidden;
+  background: url(img/1949.jpg) no-repeat center;
+  background-size: 100% 100%;
+  display: none;
+}
+#pg041 {
+  width: 40%;
+  height: 10%;
+  right: 5%;
+  top: 82%;
+  position: absolute;
+  background: url(img/bg_xqz2.png) no-repeat center;
+  background-size: auto 100%;
+}
+#pg5 {
+  width: 96%;
+  height: 96%;
+  left: 2%;
+  top: 2%;
+  position: absolute;
+  overflow: hidden;
+  background: url(img/bg4_1.png) no-repeat center;
+  background-size: 100% 100%;
+  display: none;
+}
+#pg051 {
+  width: 40%;
+  height: 10%;
+  right: 5%;
+  top: 82%;
+  position: absolute;
+  background: url(img/bg_xqz2.png) no-repeat center;
+  background-size: auto 100%;
+}

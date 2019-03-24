@@ -1,0 +1,789 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>HeHa《遛爹行动》</title>
+	<link href="./css/animate.css" rel="stylesheet" type="text/css">  
+	<link href="./css/index.css" rel="stylesheet" type="text/css">	
+	<script src="//www.google-analytics.com/analytics.js" async=""></script><script src="./js/jquery-1.10.2.min.js" type="text/javascript" charset="utf8"></script>
+	<script src="./js/jquery.touchwipe.js" type="text/javascript" charset="utf8"></script>
+	<script src="./js/preloadjs-0.6.2.min.js"></script>
+	<script>
+		var arr_img17=[
+			'bg0_1.gif',
+			'bg0_2.gif',
+			'bg0_3.png',
+		];
+		
+		for(var i=0;i<arr_img17.length;i++){
+			(function(i){
+				var oImg=new Image();
+				oImg.onload=function(){
+					i++;
+					oImg=null;
+				}
+				oImg.src='./img/'+arr_img17[i];
+			})
+			(i)
+		}
+
+	</script>
+
+</head>
+<body>
+<div id="app">
+
+	<div id="pg0" style="display: none;">
+		<div id="pg0_1"></div>
+		<div id="pg0_2"></div>
+	</div>
+	
+	<div id="pg1" style="display: none;">
+		<div id="pg1_1"></div>
+		<div id="pg1_2"></div>
+		<div id="pg1_4" style='background-image: url("./img/bg1_4_1.png");'></div>
+		<div id="pg1_5"></div>
+		<div id="pg1_3"></div>
+	</div>	
+	
+	<div id="pg2" style="display: block;">
+		<div id="pg2_0"></div>
+		<div id="pg2_1" style="opacity: 1;"></div>
+		<div id="pg2_2" style="opacity: 1;"></div>
+		<div id="pg2_3" style="display: block; opacity: 1;"></div>
+		<div id="pg2_3_1" style='background-image: url("./img/shou1.png"); display: none; opacity: 1;'></div>
+		<div id="pg2_3_2" style="display: none; opacity: 1;"></div>
+		<div id="pg2_4" style="display:none"></div>
+		<div id="pg2_5" style="display:none"></div>
+		<div id="pg2_6" style="display:none"></div>
+		<div id="pg2_7" style="display:none"></div>	
+	</div>	
+
+	<div id="pg3" style="display: block;">
+		<div id="pg3_2" style="opacity: 1;"></div>
+		<div id="pg3_3" style="opacity: 1;"></div>
+		<div id="pg3_4" style="opacity: 1;"></div>
+		<div id="pg3_5" style='background-image: url("./img/bg_xqz1.png"); opacity: 1;'></div>
+		<div id="pg3_6" style="opacity: 1;"></div>
+	</div>		
+	
+	<div id="pg4" style="display:none">
+		<div id="pg4_2"></div>
+		<div id="pg4_3"></div>
+		<div id="pg4_4"></div>
+		<div id="pg4_5" style='background-image: url("./img/bg_xqz1.png");'></div>
+		<div id="pg4_6"></div>
+	</div>		
+	
+	<div id="pg5" style="display:none">
+		<div id="pg5_2"></div>
+		<div id="pg5_3"></div>
+		<div id="pg5_4"></div>
+		<div id="pg5_5" style='background-image: url("./img/bg_xqz1.png");'></div>
+		<div id="pg5_6"></div>
+	</div>	
+
+	<div id="pg6" style="display:none">
+		<div id="pg6_2"></div>
+		<div id="pg6_3"></div>
+		<div id="pg6_4"></div>
+		<div id="pg6_5" style='background-image: url("./img/bg_xqz1.png");'></div>
+		<div id="pg6_6"></div>
+	</div>		
+	
+	<div id="pg7" style="display:none">
+		<div id="pg7_2"></div>
+		<div id="pg7_3"></div>
+		<div id="pg7_4"></div>
+		<div id="pg7_5" style='background-image: url("./img/bg_xqz1.png");'></div>	
+		<div id="pg7_6"></div>	
+	</div>	
+
+	<div id="pg8" style="display:none">
+		<div id="pg8_2"></div>
+		<div id="pg8_3"></div>
+		<div id="pg8_4"></div>
+		<div id="pg8_5"></div>		
+		<div id="pg8_6" style='background-image: url("./img/bg8_wyld1.png"); display: none;'></div>	
+		<div id="pg8_7" style="display:none"></div>		
+	</div>	
+	
+	<div id="pg9" style="display:none">
+		<div id="pg9_2"></div>
+		<div id="pg9_3"></div>
+		<div id="pg9_4"></div>
+		<div id="pg9_5"></div>
+		<div id="pg9_6">
+			<p id="total">859861</p>
+		</div>
+		<div id="pg9_7" style='background-image: url("./img/bg9_an1.png"); display: none;'></div>
+		<div id="pg9_8" style="display:none"></div>
+		<!--<div id="pg9_9" style="display:none"></div>-->
+		<!--<div id="pg9_9" style="display:none" onclick="document.getElementById('pg9_share').style.display = 'block';"></div>-->
+		
+	</div>
+	
+	<div class="sound" style="display: block;">
+        <img id="splay" style="display: none;" src="./img/splay.png">
+        <img id="sclose" src="./img/sclose.png">
+    </div>
+	<!--<div id="pg9_share" style="display:none"></div>-->
+	<!--<div id="pg9_share" style="display:none" onclick="document.getElementById('pg9_share').style.display = 'none';"></div>-->
+	  
+	 
+</div>
+<audio style="display:none" src="./img/music.mp3" loop="loop"></audio>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>    
+<script type="text/javascript">
+
+
+var audio = document.querySelector('audio');
+
+
+  $(document).ready(function(){
+  	var queue = new createjs.LoadQueue(); 
+	queue.on("complete", handleComplete, this);
+	queue.loadManifest([
+		{src:'img/bg1.jpg'},
+		{src:'img/bg1_1.png'},
+		{src:'img/bg1_2.gif'},
+		{src:'img/bg1_4_1.png'},
+		{src:'img/bg1_4_2.png'},
+		{src:'img/bg2.jpg'},
+		{src:'img/bg2_0.gif'},
+		{src:'img/bg2_1.png'},
+		{src:'img/bg2_2.png'},
+		{src:'img/bg2_3.gif'},
+		{src:'img/bg2_4.gif'},
+		{src:'img/bg2_5.gif'},
+		{src:'img/bg2_6.gif'},
+		{src:'img/bg2_7.gif'},
+		{src:'img/bg3_1.png'},
+		{src:'img/bg3_2.png'},
+		{src:'img/bg3_3.png'},
+		{src:'img/bg3_4.png'},
+		{src:'img/bg4_1.png'},
+		{src:'img/bg4_2.png'},
+		{src:'img/bg4_3.png'},
+		{src:'img/bg4_4.png'},
+	]);
+	function handleComplete() {
+		pageinit&&pageinit();
+	}
+
+
+  	/*var arr_img=[
+  		'sclose.png',
+  		'splay.png',
+		'bg1.jpg',
+		'bg1_1.png',
+		'bg1_2.gif',
+		'bg1_4_1.png',
+		'bg1_4_2.png',
+		'bg2.jpg',
+		'bg2_0.gif',
+		'bg2_1.png',
+		'bg2_2.png',
+		'bg2_3.gif',
+		'bg2_4.gif',
+		'bg2_5.gif',
+		'bg2_6.gif',
+		'bg2_7.gif',
+		'bg_xqz1.png',
+		'bg_xqz2.png',
+		'bg3_1.png',
+		'bg3_2.png',
+		'bg3_3.png',
+		'bg3_4.png',
+		'bg4_1.png',
+		'bg4_2.png',
+		'bg4_3.png',
+		'bg4_4.png',
+		'shou1.png',
+		'shou2.png',
+    	];
+	
+    	for(var i=0;i<arr_img.length;i++){
+	  		(function(i){
+	    			var oImg=new Image();
+	    			oImg.onload=function(){									
+	   				i++;
+	   				oImg=null;
+	    				if(i==arr_img.length){
+	  					pageinit&&pageinit();
+	  					return true;
+	  				}
+	  			}
+	  			oImg.src='http://dxinlan.com/heha/img/'+arr_img[i];
+	  		})(i)
+  		}*/
+  	})
+  
+  $("#pg2").touchwipe( {
+		wipeRight:function(){
+			$("#pg1").css("display","block");
+			$("#pg2").css("display","none");	
+		},
+		min_move_x: 50,
+		min_move_y: 50,
+		preventDefaultEvents: true
+	});
+	
+	$("#pg3").touchwipe( {
+		wipeRight:function(){
+			$("#pg2").css("display","block");
+			$("#pg3").css("display","none");	
+		},
+		min_move_x: 50,
+		min_move_y: 50,
+		preventDefaultEvents: true
+	});
+	
+	$("#pg4").touchwipe( {
+		wipeRight:function(){
+			$("#pg2").css("display","block");
+			$("#pg4").css("display","none");	
+		},
+		min_move_x: 50,
+		min_move_y: 50,
+		preventDefaultEvents: true
+	});
+	
+	$("#pg5").touchwipe( {
+		wipeRight:function(){
+			$("#pg2").css("display","block");
+			$("#pg5").css("display","none");	
+		},
+		min_move_x: 50,
+		min_move_y: 50,
+		preventDefaultEvents: true
+	});
+	
+	$("#pg6").touchwipe({
+		wipeRight:function(){
+			$("#pg2").css("display","block");
+			$("#pg6").css("display","none");	
+		},
+		min_move_x: 50,
+		min_move_y: 50,
+		preventDefaultEvents: true
+	});
+	
+	$("#pg7").touchwipe( {
+		wipeRight:function(){
+			$("#pg2").css("display","block");
+			$("#pg7").css("display","none");	
+		},
+		min_move_x: 50,
+		min_move_y: 50,
+		preventDefaultEvents: true
+	});
+	
+	$("#pg8").touchwipe( {
+		wipeRight:function(){
+			$("#pg2").css("display","block");
+			$("#pg8").css("display","none");	
+		},
+		min_move_x: 50,
+		min_move_y: 50,
+		preventDefaultEvents: true
+	});
+	
+	$("#pg9").touchwipe( {
+		wipeRight:function(){
+			$("#pg8").css("display","block");
+			$("#pg9").css("display","none");	
+		},
+		min_move_x: 50,
+		min_move_y: 50,
+		preventDefaultEvents: true
+	});
+
+	setInterval(function(){
+		$("#pg3_5").css("background-image","url(./img/bg_xqz1.png)");
+		setTimeout(function(){
+			$("#pg3_5").css("background-image","url(./img/bg_xqz2.png)");
+		},750);
+		$("#pg4_5").css("background-image","url(./img/bg_xqz1.png)");
+		setTimeout(function(){
+			$("#pg4_5").css("background-image","url(./img/bg_xqz2.png)");
+		},750);
+		$("#pg5_5").css("background-image","url(./img/bg_xqz1.png)");
+		setTimeout(function(){
+			$("#pg5_5").css("background-image","url(./img/bg_xqz2.png)");
+		},750);
+		$("#pg6_5").css("background-image","url(./img/bg_xqz1.png)");
+		setTimeout(function(){
+			$("#pg6_5").css("background-image","url(./img/bg_xqz2.png)");
+		},750);
+		$("#pg7_5").css("background-image","url(./img/bg_xqz1.png)");
+		setTimeout(function(){
+			$("#pg7_5").css("background-image","url(./img/bg_xqz2.png)");
+		},750);
+		$("#pg8_6").css("background-image","url(./img/bg8_wyld1.png)");
+		setTimeout(function(){
+			$("#pg8_6").css("background-image","url(./img/bg8_wyld2.png)");
+		},750);
+		$("#pg9_7").css("background-image","url(./img/bg9_an1.png)");
+		setTimeout(function(){
+			$("#pg9_7").css("background-image","url(./img/bg9_an2.png)");
+		},750);
+		$("#pg1_4").css("background-image","url(./img/bg1_4_1.png)");
+		setTimeout(function(){
+			$("#pg1_4").css("background-image","url(./img/bg1_4_2.png)");
+		},750);
+		$("#pg2_3_1").css("background-image","url(./img/shou1.png)");
+		setTimeout(function(){
+			$("#pg2_3_1").css("background-image","url(./img/shou2.png)");
+		},750);
+	},1500);
+
+	
+	
+
+$("#pg1_3").click(function(){
+	$.ajax({
+			type: 'POST',
+			url: 'ajax_post.php?heha=go',
+			contentType: "application/x-www-form-urlencoded; charset=utf8", 
+			data:{} ,
+			success:function(data){
+				//alert(123);
+			},
+			error: function() {
+			},											
+	});
+	$("#pg2").css("display","block");
+	$("#pg1").css("display","none");
+	jiazai2();
+	$('#pg2_1').animate({'opacity':1},1200,function(){
+		$('#pg2_2').animate({'opacity':1},600,function(){
+			$("#pg2_3").css("display","block");
+			$('#pg2_3').animate({'opacity':1},800);
+			$("#pg2_3_1").css("display","block");
+			$("#pg2_3_1").animate({'opacity':1},800);
+			$("#pg2_3_2").css("display","block");
+			$("#pg2_3_2").animate({'opacity':1},800);
+		});	
+	});
+	
+});
+
+$("#pg2_3").click(function(){
+	$.ajax({
+			type: 'POST',
+			url: 'ajax_post.php?heha=one',
+			contentType: "application/x-www-form-urlencoded; charset=utf8", 
+			data:{} ,
+			success:function(data){
+			},
+			error: function() {
+			},											
+	});
+	$("#pg2_3_2").css("display","none");
+	$("#pg2_3_1").css("display","none");
+	$("#pg3").css("display","block");
+	$("#pg3").addClass('jie_animation bounceIn');
+	setTimeout(function(){
+		$("#pg3").removeClass('jie_animation bounceIn');
+	},1000);
+	$('#pg3_2').animate({'opacity':1},1200,function(){
+		$('#pg3_3').animate({'opacity':1},600,function(){
+			$('#pg3_4').animate({'opacity':1},1200,function(){
+				$('#pg3_5').animate({'opacity':1},800);
+				$('#pg3_6').animate({'opacity':1},800);
+			});
+		});
+	});     
+});
+$("#pg3_5").click(function(){
+	$("#pg3").css("display","none");
+	$("#pg2").css("display","block");
+	$("#pg2_4").css("display","block");
+	$('#pg2_4').animate({'opacity':1},1000);
+	//$("#pg2_4_1").css("display","block");
+	//$('#pg2_4_1').animate({'opacity':1},1000);	
+});
+
+$("#pg2_4").click(function(){
+	$.ajax({
+			type: 'POST',
+			url: 'ajax_post.php?heha=two',
+			contentType: "application/x-www-form-urlencoded; charset=utf8", 
+			data:{} ,
+			success:function(data){
+			},
+			error: function() {
+			},											
+	});	
+	//$("#pg2").css("display","none");   
+	$("#pg4").css("display","block");
+	$("#pg4").addClass('jie_animation bounceIn');
+	setTimeout(function(){
+		$("#pg4").removeClass('jie_animation bounceIn');
+	},1000);
+	$('#pg4_2').animate({'opacity':1},1200,function(){
+		$('#pg4_3').animate({'opacity':1},600,function(){
+			$('#pg4_4').animate({'opacity':1},1200,function(){
+				$('#pg4_5').animate({'opacity':1},800);
+				$('#pg4_6').animate({'opacity':1},800);
+			});
+		});
+	});     
+});
+$("#pg4_5").click(function(){
+	$("#pg4").css("display","none");
+	$("#pg2").css("display","block");
+	$("#pg2_5").css("display","block");
+	$('#pg2_5').animate({'opacity':1},1000);			
+});
+
+$("#pg2_5").click(function(){
+	$.ajax({
+			type: 'POST',
+			url: 'ajax_post.php?heha=three',
+			contentType: "application/x-www-form-urlencoded; charset=utf8", 
+			data:{} ,
+			success:function(data){
+			},
+			error: function() {
+			},											
+	});	
+	//$("#pg2").css("display","none");   
+	$("#pg5").css("display","block");
+	$("#pg5").addClass('jie_animation bounceIn');
+	setTimeout(function(){
+		$("#pg5").removeClass('jie_animation bounceIn');
+	},1000);
+	$('#pg5_2').animate({'opacity':1},1200,function(){
+		$('#pg5_3').animate({'opacity':1},600,function(){
+			$('#pg5_4').animate({'opacity':1},1200,function(){
+				$('#pg5_5').animate({'opacity':1},800);
+				$('#pg5_6').animate({'opacity':1},800);
+			});
+		});
+	});     
+});
+$("#pg5_5").click(function(){
+	$("#pg5").css("display","none");
+	$("#pg2").css("display","block");
+	$("#pg2_6").css("display","block");
+	$('#pg2_6').animate({'opacity':1},1000);			
+});
+
+$("#pg2_6").click(function(){
+	$.ajax({
+			type: 'POST',
+			url: 'ajax_post.php?heha=four',
+			contentType: "application/x-www-form-urlencoded; charset=utf8", 
+			data:{} ,
+			success:function(data){
+			},
+			error: function() {
+			},											
+	});	
+	//$("#pg2").css("display","none");   
+	$("#pg6").css("display","block");
+	$("#pg6").addClass('jie_animation bounceIn');
+	setTimeout(function(){
+		$("#pg6").removeClass('jie_animation bounceIn');
+	},1000);
+	$('#pg6_2').animate({'opacity':1},1200,function(){
+		$('#pg6_3').animate({'opacity':1},600,function(){
+			$('#pg6_4').animate({'opacity':1},1200,function(){
+				$('#pg6_5').animate({'opacity':1},800);
+				$('#pg6_6').animate({'opacity':1},800);
+			});
+		});
+	});     
+});
+$("#pg6_5").click(function(){
+	$("#pg6").css("display","none");
+	$("#pg2").css("display","block");
+	$("#pg2_7").css("display","block");
+	$('#pg2_7').animate({'opacity':1},1000);			
+});
+
+$("#pg2_7").click(function(){
+	$.ajax({
+			type: 'POST',
+			url: 'ajax_post.php?heha=five',
+			contentType: "application/x-www-form-urlencoded; charset=utf8", 
+			data:{} ,
+			success:function(data){
+			},
+			error: function() {
+			},											
+	});	
+	//$("#pg2").css("display","none");   
+	$("#pg7").css("display","block");
+	$("#pg7").addClass('jie_animation bounceIn');
+	setTimeout(function(){
+		$("#pg7").removeClass('jie_animation bounceIn');
+	},1000);
+	$('#pg7_2').animate({'opacity':1},1200,function(){
+		$('#pg7_3').animate({'opacity':1},600,function(){
+			$('#pg7_4').animate({'opacity':1},600,function(){
+				$('#pg7_5').animate({'opacity':1},600);
+				$('#pg7_6').animate({'opacity':1},600);
+			});
+		});
+	});     
+});
+$("#pg7_5").click(function(){
+	$("#pg7").css("display","none");
+	$("#pg2").css("display","none"); 
+	$("#pg8").css("display","block");
+	$('#pg8_2').animate({'opacity':1},3000,function(){
+		$('#pg8_3').animate({'opacity':1},4000,function(){
+			$('#pg8_2').animate({'opacity':0},3000);
+			$('#pg8_3').animate({'opacity':0},3000);
+			$('#pg8_4').animate({'opacity':1},5000,function(){
+				$('#pg8_5').animate({'opacity':1},2000,function(){
+					$("#pg8_6").css("display","block");
+					$('#pg8_6').animate({'opacity':1},1500);
+					$("#pg8_7").css("display","block");
+					$('#pg8_7').animate({'opacity':1},2000);
+				});
+			});
+		});
+	});		
+});
+
+
+$("#pg8_6").click(function(){
+	$.ajax({
+			type: 'POST',
+			url: 'ajax_post.php?heha=begain',
+			contentType: "application/x-www-form-urlencoded; charset=utf8", 
+			data:{} ,
+			success:function(data){
+			},
+			error: function() {
+			},											
+	});	
+	$("#pg8").css("display","none");
+	$("#pg9").css("display","block");
+	$('#pg9_2').animate({'opacity':1},1200,function(){
+		$('#pg9_3').animate({'opacity':1},1500,function(){
+			$('#pg9_4').animate({'opacity':1},1500,function(){
+				$('#pg9_5').animate({'opacity':1},1500,function(){
+					$('#pg9_6').animate({'opacity':1},1500,function(){
+						$("#pg9_7").css("display","block");
+						$("#pg9_8").css("display","block");
+						$("#pg9_9").css("display","block");
+						$('#pg9_7').animate({'opacity':1},1200);
+					})
+				});
+			});
+		});
+	});				
+});
+
+$("#pg9_8").click(function(){
+	$.ajax({
+		type: 'POST',
+		url: 'ajax_post.php?heha=loadnum',
+		contentType: "application/x-www-form-urlencoded; charset=utf8", 
+		data:{} ,
+		success:function(data){
+		},
+		error: function() {
+		},											
+	});
+	setTimeout(function(){window.location='https://wap.koudaitong.com/v2/apps/vote/index.html?alias=wqmdhs07&kdt_id=5094034';},200);
+});
+
+/*$("#pg9_9").click(function(){
+	$.ajax({
+		type: 'POST',
+		url: 'ajax_post.php?heha=share',
+		contentType: "application/x-www-form-urlencoded; charset=utf8", 
+		data:{} ,
+		success:function(data){
+		},
+		error: function() {
+		},											
+	});
+	$("#pg9_share").css("display","block");
+});
+
+$("#pg9_share").click(function(){
+	$("#pg9_share").css("display","none");
+});
+*/
+function jiazai2(){
+
+	var queue1 = new createjs.LoadQueue(); 
+	queue1.on("complete", handleComplete1, this);
+	queue1.loadManifest([
+		{src:'img/bg5_1.png'},
+		{src:'img/bg5_2.png'},
+		{src:'img/bg5_3.png'},
+		{src:'img/bg5_4.png'},
+		{src:'img/bg6_1.png'},
+		{src:'img/bg6_2.png'},
+		{src:'img/bg6_3.png'},
+		{src:'img/bg6_4.png'},
+		{src:'img/bg7_1.png'},
+		{src:'img/bg7_2.png'},
+		{src:'img/bg7_3.png'},
+		{src:'img/bg7_4.png'},
+		{src:'img/bg8_1.gif'},
+		{src:'img/bg8_2.png'},
+		{src:'img/bg8_3.png'},
+		{src:'img/bg8_4.png'},
+		{src:'img/bg8_5.png'},
+		{src:'img/bg8_wyld1.png'},
+		{src:'img/bg8_wyld2.png'},
+		{src:'img/bg9_1.jpg'},
+		{src:'img/bg9_2.png'},
+		{src:'img/bg9_3.png'},
+		{src:'img/bg9_4.png'},
+		{src:'img/bg9_5.png'},
+		{src:'img/bg9_6.png'},
+		{src:'img/bg9_an1.png'},
+		{src:'img/bg9_an2.png'},
+		{src:'img/bg9_share.png'},
+		{src:'img/bg_jrheha1.png'},
+		{src:'img/bg_jrheha2.png'},
+		{src:'img/bg_xqz1.png'},
+		{src:'img/bg_xqz2.png'},
+		{src:'img/dian.png'},
+		{src:'img/sclose.png'},
+		{src:'img/share.jpg'},
+		{src:'img/shou1.png'},
+		{src:'img/shou2.png'},
+		{src:'img/splay.png'},
+	]);
+	function handleComplete1() {
+		console.log('jiazaiwan');
+	}
+	/*var arr_img2=[
+		'bg5_1.png',
+		'bg5_2.png',
+		'bg5_3.png',
+		'bg5_4.png',
+		'bg6_1.png',
+		'bg6_2.png',
+		'bg6_3.png',
+		'bg6_4.png',
+		'bg7_1.png',
+		'bg7_2.png',
+		'bg7_3.png',
+		'bg7_4.png',
+		'bg8_1.gif',
+		'bg8_2.png',
+		'bg8_3.png',
+		'bg8_4.png',
+		'bg8_5.png',
+		'bg8_wyld1.png',
+		'bg8_wyld2.png',
+		'bg9_1.jpg',
+		'bg9_2.png',
+		'bg9_3.png',
+		'bg9_4.png',
+		'bg9_5.png',
+		'bg9_6.png',
+		'bg9_an1.png',
+		'bg9_an2.png',
+		'bg9_share.png',
+		'share.jpg',
+		'bg_jrheha1.png',
+		'bg_jrheha2.png',
+	];
+	
+	for(var i=0;i<arr_img2.length;i++){
+		(function(i){
+			var oImg=new Image();
+			oImg.onload=function(){
+				i++;
+				oImg=null;
+			}
+			oImg.src='http://dxinlan.com/heha/img/'+arr_img2[i];
+		})
+		(i)
+	}*/
+};
+
+function pageinit(){
+	setTimeout(function(){
+		$("#pg0").css("display","none");
+		$("#pg1").css("display","block");			
+		audio.play();
+		$(".sound").css("display","block");
+        $("#splay").show();
+        $("#sclose").hide();	
+	},2000);	
+};
+
+$("#splay").click(function(){
+   audio.pause();
+   $("#splay").hide();
+   $("#sclose").show();
+});
+
+$("#sclose").click(function(){
+   audio.play();
+   $("#splay").show();
+   $("#sclose").hide();
+});
+
+wx.config({
+    debug: false,
+    appId: 'wx72fdcf6f4ff485d1',
+    timestamp: 1552909293,
+    nonceStr: '5ClSRt8Gi9TjCeiv',
+    signature: 'e417014a999ca800ccb65248b060796a2cffb7f5',
+    jsApiList: [
+        'checkJsApi',
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage',
+        'onMenuShareQQ',
+        'onMenuShareWeibo'
+    ]
+});
+
+wx.ready(function () {
+  var shareData = {
+    title: 'HeHa遛爹行动',
+    desc: '父亲节HeHa遛爹行动！大家一起来遛爹，我是第 '+'859861'+' 个倡议者',
+    link: 'http://dxinlan.com/heha/index.php',
+    imgUrl: 'http://dxinlan.com/heha/img/share.jpg',
+  };
+  wx.onMenuShareAppMessage(shareData);
+  wx.onMenuShareTimeline({
+    title: '父亲节HeHa遛爹行动！大家一起来遛爹，我是第 '+'859861'+' 个倡议者',
+    desc: 'HeHa遛爹行动',
+    link: 'http://dxinlan.com/heha/index.php',
+    imgUrl: 'http://dxinlan.com/heha/img/share.jpg',
+  });
+	wx.error(function (res) {
+		alert(res.errMsg);
+	});
+    
+})
+
+</script>
+<script>
+  var _hmt = _hmt || [];
+  var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+  document.write(unescape("%3Cscript src='" + _bdhmProtocol + 
+"hm.baidu.com/h.js%1fc00a03b245f4af445f88d5e58c88c2' type='text/javascript'%3E%3C/script%3E"));
+</script><script src=" http://hm.baidu.com/h.js&#31;c00a03b245f4af445f88d5e58c88c2" type="text/javascript"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-58308633-1', 'auto');
+  ga(function(tracker) {
+    ga('send', 'pageview', {'dimension1': tracker.get('clientId')});
+  });
+</script>
+<div style="display:none">
+<script language="JavaScript" src="http://s4.cnzz.com/z_stat.php?id=1255333667&amp;web_id=1255333667"></script><script src="http://c.cnzz.com/core.php?web_id=1255333667&amp;t=z" type="text/javascript" charset="utf-8"></script><a title="站长统计" href="https://www.cnzz.com/stat/website.php?web_id=1255333667" target="_blank">站长统计</a>
+</div>
+
+
+
+</body></html>
