@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
     <title>HeHa《遛爹行动》</title>
     <link rel="stylesheet" href="index.css" />
-  <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+  </head>
 
-</head>
-
-  
   <body>
     <div id="app">
-      <div id="time"></div>
-
       <div id="dream">
         <div id="dianji-shou"></div>
         <div id="dianji"></div>
@@ -21,83 +20,262 @@
       </div>
 
       <div id="pg0">
+        <div id="z1">
+            <img src="img/筑梦2.gif" id="zhumeng" />
+          </div>
         <div id="dongshou"></div>
         <div id="pg07"></div>
+        <div id="wenzi"></div>
         <div id="pg00"></div>
-        <div id="pg01"></div>
-        <div id="pg02"></div>
-        <div id="pg03"></div>
-        <div id="pg04"></div>
-        <div id="pg05"></div>
+        <div id="zw">
+          <div id="pg01"></div>
+          <div id="pg02"></div>
+          <div id="pg03"></div>
+          <div id="pg04"></div>
+          <div id="pg05"></div>
+        </div>
         <div id="pg06"></div>
-        <div id="pgtu"></div>
       </div>
+      
       <div id="pg1">
-        <div id="pg011"></div>
-        <div id="pg1-1"></div>
-        <div id="pg1-2"></div>
-        <div id="pg1-3"></div>
+        <div id="b1">
+          <img src="img/1914.jpg" alt="" class="bgg1" />
+        </div>
+        <div id="pg011" class="d1"></div>
+        <div id="pg1-1">
+          <img src="img/14.11.gif" alt="" class="bgg1" />
+        </div>
+        <div id="pg1-2">
+          <img src="img/14.12.gif" alt="" class="bgg1" />
+        </div>
+        <div id="pg1-3">
+          <img src="img/14.13.gif" alt="" class="bgg1" />
+        </div>
       </div>
 
       <div id="pg2">
-        <div id="pg021"></div>
+        <div id="b2">
+          <img src="img/1919_2.gif" alt="" class="bgg1" />
+        </div>
+        <div id="pg021" class="d1"></div>
+        <div id="pg022">
+          <img src="img/1919。111.gif" alt="" class="bgg1" />
+        </div>
+        <div id="pg023">
+          <img src="img/1919.222.gif" alt="" class="bgg1" />
+        </div>
+        <div id="pg024">
+          <img src="img/1919.333.gif" alt="" class="bgg1" />
+        </div>
       </div>
+
       <div id="pg3">
-        <div id="pg031"></div>
+        <div id="b3">
+          <img src="img/1921.jpg" alt="" class="bgg1" />
+        </div>
+        <div id="pg031" class="d1"></div>
+        <div id="pg032">
+          <img src="img/21.11.gif" alt="" class="bgg1" />
+        </div>
+        <div id="pg033">
+          <img src="img/21.12.gif" alt="" class="bgg1" />
+        </div>
+        <div id="pg034">
+          <img src="img/21.13.gif" alt="" class="bgg1" />
+        </div>
       </div>
       <div id="pg4">
-        <div id="pg041"></div>
+        <div id="b4">
+          <img src="img/1949.jpg" alt="" class="bgg1" />
+        </div>
+        <div id="pg041" class="d1"></div>
+        <div id="pg042">
+          <img src="img/49.11.gif" alt="" class="bgg1" />
+        </div>
+        <div id="pg043">
+          <img src="img/49.12.gif" alt="" class="bgg1" />
+        </div>
+        <div id="pg044">
+          <img src="img/49.13.gif" alt="" class="bgg1" />
+        </div>
       </div>
+
       <div id="pg5">
-        <div id="pg051"></div>
+        <video id="mp4" controls style="height: auto" preload="preload">
+          <source src="img/逐帧-爱剪辑-我的视频9.mp4" type="video/mp4" />
+        </video>
       </div>
     </div>
 
-    <script>
-    $("#pg00").click(function(){
-        $("#pg07").css("display","none");
-        $("#pg00").css("display","none");
-        $("#pg01").css("display","block");
-        
-    })
-    $("#pg01").click(function(){
-        $("#pg1").css("display","block");
-        
-    })
-    $("#pg02").click(function(){
-        $("#pg2").css("display","block");
-    })
-    $("#pg03").click(function(){
-        $("#pg3").css("display","block");
-    })
-    $("#pg04").click(function(){
-        $("#pg4").css("display","block");
-    })
-    $("#pg05").click(function(){
-        $("#pg5").css("display","block");
-    })
+    <div id="sound">
+      <img id="splay" />
+      <img id="sclose" />
+    </div>
 
-    $("#pg011").click(function(){
-        $("#pg1").css("display","none");
-        $("#pg02").css("display","block");
-    })
-    $("#pg021").click(function(){
-        $("#pg2").css("display","none");
-        $("#pg03").css("display","block");
-    })
-    $("#pg031").click(function(){
-        $("#pg3").css("display","none");
-        $("#pg04").css("display","block");
-    })
-    $("#pg041").click(function(){
-        $("#pg4").css("display","none");
-        $("#pg05").css("display","block");
-    })
-    $("#pg041").click(function(){
-        $("#pg5").css("display","none");
-        $("#pg06").css("display","block");
-    })
-    
+    <audio
+      style="display:none"
+      src="img/Trevor Rabin - Enemy of the State (Main Theme).mp3"
+      loop="loop"
+    ></audio>
+    <script>
+      var audio = document.querySelector("audio");
+      function pageinit() {
+        $("#pg0").css("display", "none");
+        setTimeout(function() {
+          $("#time").css("display", "none");
+          $("#dream").css("display", "block");
+          audio.play();
+          $("#sound").css("display", "block");
+          $("#splay").show();
+          $("#sclose").hide();
+        }, 4000);
+      }
+      pageinit();
+
+      $("#splay").click(function() {
+        audio.pause();
+        $("#splay").hide();
+        $("#sclose").show();
+      });
+
+      $("#sclose").click(function() {
+        audio.play();
+        $("#splay").show();
+        $("#sclose").hide();
+      });
+
+      $("#dianji").click(function() {
+        $("#dream").css("display", "none");
+        $("#pg0").css("display", "block");
+        $("#z1").css("display", "block");
+      });
+
+      $("#pg00").click(function() {
+        $("#pg07").css("display", "none");
+        $("#pg00").css("display", "none");
+        $("#pg01").css("display", "block");
+      });
+      $("#pg01").click(function() {
+        $("#pg0").css("display", "block");
+        $("#pg1").css("display", "block");
+        showh1();
+      });
+      $("#pg02").click(function() {
+        $("#pg2").css("display", "block");
+        $("#b2").css("display", "block");
+        showh2();
+      });
+      $("#pg03").click(function() {
+        $("#pg3").css("display", "block");
+        $("#b3").css("display", "block");
+        showh3();
+      });
+      $("#pg04").click(function() {
+        $("#pg4").css("display", "block");
+        $("#b4").css("display", "block");
+        showh4();
+      });
+      $("#pg05").click(function() {
+        $("#pg5").css("display", "block");
+        $("#b5").css("display", "block");
+        resizeBody();
+      });
+
+      $("#pg011").click(function() {
+        $("#pg1").css("display", "none");
+        $("#pg0").css("display", "block");
+        $("#pg02").css("display", "block");
+      });
+      $("#pg021").click(function() {
+        $("#pg2").css("display", "none");
+        $("#pg03").css("display", "block");
+      });
+      $("#pg031").click(function() {
+        $("#pg3").css("display", "none");
+        $("#pg04").css("display", "block");
+      });
+      $("#pg041").click(function() {
+        $("#pg4").css("display", "none");
+        $("#pg05").css("display", "block");
+        $("#sound").css("display", "none");
+        audio.pause();
+      });
+      $("#pg051").click(function() {
+        $("#pg5").css("display", "none");
+        $("#pg06").css("display", "block");
+      });
+
+      function showh1() {
+        $("pg1").css("display", "block");
+        setInterval(function() {
+          $("#pg1-1").css("display", "block");
+        }, 1000);
+        setInterval(function() {
+          $("#pg1-2").css("display", "block");
+        }, 2000);
+        setInterval(function() {
+          $("#pg1-3").css("display", "block");
+        }, 3000);
+        setInterval(function() {
+          $("#pg011").css("display", "block");
+        }, 4000);
+      }
+
+      function showh2() {
+        setInterval(function() {
+          $("#pg022").css("display", "block");
+        }, 1000);
+        setInterval(function() {
+          $("#pg023").css("display", "block");
+        }, 2000);
+        setInterval(function() {
+          $("#pg024").css("display", "block");
+        }, 3000);
+        setInterval(function() {
+          $("#pg021").css("display", "block");
+        }, 4000);
+      }
+
+      function showh3() {
+        setInterval(function() {
+          $("#pg032").css("display", "block");
+        }, 1000);
+        setInterval(function() {
+          $("#pg033").css("display", "block");
+        }, 2000);
+        setInterval(function() {
+          $("#pg034").css("display", "block");
+        }, 3000);
+        setInterval(function() {
+          $("#pg031").css("display", "block");
+        }, 4000);
+      }
+
+      function showh4() {
+        setInterval(function() {
+          $("#pg042").css("display", "block");
+        }, 900);
+        setInterval(function() {
+          $("#pg043").css("display", "block");
+        }, 2000);
+        setInterval(function() {
+          $("#pg044").css("display", "block");
+        }, 3000);
+        setInterval(function() {
+          $("#pg041").css("display", "block");
+        }, 4000);
+      }
+
+      function resizeBody() {
+        var bodyHeight = document.documentElement.clientHeight;
+        var bodyWidth = document.documentElement.clientWidth;
+
+        $("#mp4").width(bodyHeight + "px");
+        $("#mp4").height(bodyWidth + "px");
+
+        var video = document.getElementById("mp4");
+        video.play();
+      }
     </script>
   </body>
 </html>
